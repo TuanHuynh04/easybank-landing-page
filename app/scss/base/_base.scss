@@ -1,0 +1,36 @@
+@use 'utility' as *;
+
+body{
+    background-color:var(--darkWhite);
+}
+
+.container{
+    max-width: 32.7rem;
+    width: 100%;
+    margin: 0 auto;
+    @include breakpoint(small){
+        max-width: 54rem;
+    }
+    @include breakpoint(medium){
+        max-width: 70rem;
+
+    }
+
+    @include breakpoint(large){
+        max-width: 90rem;
+
+    }
+
+    @include breakpoint(xlarge){
+        max-width: 110rem;
+
+    }
+}
+
+.hover-blue{
+    &:hover{
+        .nav-link{
+            color: var(--blue);
+        }
+    }
+}
